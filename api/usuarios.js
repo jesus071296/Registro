@@ -25,7 +25,7 @@
 "use strict";
 
 var db = require('./db');
-var table = 'usuarios';
+var table = 'ismas';
 
 function getAll(req, res, next) {
     db.get_records(table, {})

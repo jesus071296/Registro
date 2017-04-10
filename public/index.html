@@ -42,7 +42,7 @@ THE SOFTWARE.
 
                     <div class="checkbox" ng-repeat="item in users">
                         <label>
-                            <input type="checkbox" ng-click="remove(item)"> {{ item.nombre}} {{item.paterno}} {{item.materno}}
+                            <input type="checkbox" ng-click="remove(item)"> {{ item.nombre}} {{item.apellidop}} {{item.apellidom}} {{item.dia}} {{item.mes}} {{item.ano}} {{item.peticion}}
                         </label>
                     </div>
 
@@ -56,10 +56,22 @@ THE SOFTWARE.
                             <input type="text" class="form-control input-lg text-center" placeholder="Nombre" ng-model="user.nombre">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control input-lg text-center" placeholder="Paterno" ng-model="user.paterno">
+                            <input type="text" class="form-control input-lg text-center" placeholder="Paterno" ng-model="user.apellidop">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control input-lg text-center" placeholder="Materno" ng-model="user.materno">
+                            <input type="text" class="form-control input-lg text-center" placeholder="Materno" ng-model="user.apellidom">
+                        </div>
+<div class="form-group">
+                            <input type="text" class="form-control input-lg text-center" placeholder="Nombre" ng-model="user.dia">
+                        </div>
+<div class="form-group">
+                            <input type="text" class="form-control input-lg text-center" placeholder="Nombre" ng-model="user.mes">
+                        </div>
+<div class="form-group">
+                            <input type="text" class="form-control input-lg text-center" placeholder="Nombre" ng-model="user.ano">
+                        </div>
+<div class="form-group">
+                            <input type="text" class="form-control input-lg text-center" placeholder="Nombre" ng-model="user.peticion">
                         </div>
                         <button type="submit" class="btn btn-primary btn-lg" ng-click="create(user)">Agregar</button>
                     </form>
