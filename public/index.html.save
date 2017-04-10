@@ -33,7 +33,7 @@ THE SOFTWARE.
     <body ng-controller="UsersController">
         <div class="container">
             <div class="jumbotron text-center">
-                <h1>Total de usuarios registrados <span class="label label-info">{{ users.length}}</span></h1>
+                <h1>Registro de fechas de cumpleaños <span class="label label-info">{{ users.length}}</span></h1>
                 <button type="submit" class="btn btn-primary btn-lg" ng-click="get()">Cargar usuarios</button>
             </div>
 
@@ -61,10 +61,6 @@ THE SOFTWARE.
                         <div class="form-group">
                             <input type="text" class="form-control input-lg text-center" placeholder="Materno" ng-model="user.apellidom">
                         </div>
-<div class="jumbotron text-center">
-                <h1>Datos de Fechas <span class="label label-info">{{ users.length}}</span></h1>
-            </div>
-
 <div class="form-group">
                             <input type="text" class="form-control input-lg text-center" placeholder="Dia" ng-model="user.dia">
                         </div>
@@ -72,10 +68,10 @@ THE SOFTWARE.
                             <input type="text" class="form-control input-lg text-center" placeholder="Mes" ng-model="user.mes">
                         </div>
 <div class="form-group">
-                            <input type="text" class="form-control input-lg text-center" placeholder="Año" ng-model="user.ano">
+                            <input type="text" class="form-control input-lg text-center" placeholder="Año" ng-model="user.año">
                         </div>
 <div class="form-group">
-                            <input type="text" class="form-control input-lg text-center" placeholder="Que quieres de regalo" ng-model="user.peticion">
+                            <input type="text" class="form-control input-lg text-center" placeholder="Nombre" ng-model="user.peticion">
                         </div>
                         <button type="submit" class="btn btn-primary btn-lg" ng-click="create(user)">Agregar</button>
                     </form>
